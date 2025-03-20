@@ -1,1 +1,345 @@
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mathpro Usage Report- Release Notes</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0;
+      padding-left: 20px; /* Reduced padding to align text to the left */
+      padding-right: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      text-align: left; /* Aligns text to the left */
+      width: 100%;
+    }
+    .arrow {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 10px solid black;
+      top: 100px; /* Adjust based on where you want the arrow */
+      left: 100px; /* Adjust the position */
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6,p, ul, ol, li, blockquote {
+      margin-top: 1.4em;
+      text-align: left !important;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0 0 0 1em; /* Adds a slight left margin */
+      hyphens: manual;
+      text-align: left; /* Ensures code is aligned to the left */
+    }
+    pre {
+      margin: 1em 0;
+      padding: 1em; /* Adds padding inside the pre block */
+      overflow: auto;
+      text-align: left; /* Aligns the content inside the pre tag to the left */
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<p><em><strong>Data lake - MATHPRO Usage Report</strong></em></p>
+<h1 class="TOC-Heading" id="table-of-contents">Table of Contents</h1>
+<p><a
+href="#accessing-the-mathpro-usage-report">1.
+Accessing the Mathpro Usage report <span>2</span></a></p>
+<p><a href="#the-kpi-panel">2. The KPI Panel <span>2</span></a></p>
+<p><a
+href="#mathpro-usage-overall-and-unique">3.
+Mathpro usage – Overall and Unique <span>3</span></a></p>
+<p><a href="#export-and-explore-in-excel">3.1 Export and Explore in
+Excel <span>3</span></a></p>
+<p><a
+href="#which-data-do-you-want-to-export">3.2
+Which data do you want to export? <span>4</span></a></p>
+<p><a
+href="#overall-activities-assigned-vs-completed">3.3
+Overall Activities: Assigned vs Completed <span>4</span></a></p>
+<p><a
+href="#unique-activities-assigned-vs-completed">3.4
+Unique Activities: Assigned vs Completed <span>5</span></a></p>
+<p><a href="#activity-usage">4.
+Activity Usage <span>5</span></a></p>
+<p><a href="#overall-activity-by-status">4.1 Overall: Activity by Status
+<span>6</span></a></p>
+<p><a
+href="#unique-activity-by-status">4.2
+Unique: Activity by Status <span>6</span></a></p>
+<p><a href="#_Toc192494091">5. Average Usage <span>7</span></a></p>
+<p><a
+href="#average-activities-completed">5.1
+Average Activities Completed <span>7</span></a></p>
+<h1
+id="accessing-the-mathpro-usage-report">1 Accessing
+the Mathpro Usage report</h1><img src="media/image1.png"
+     style="width: 600px; height: 290px; border: 2px solid black;"/>
+<!-- Arrow pointing to the box -->
+<!-- <div class="arrow"><img src="media/arrow.png"></div> <!-- The arrow --> -->
+<p>Click on Mathpro Usage Report. By default the Mathpro usage – Overall
+and Unique report will be opened.</p>
+<h1 id="the-kpi-panel">2 The KPI Panel</h1><img src="media/image2.png"
+style="width:6.26528in;height:0.76389in"/>
+<p>The KPI Panel will be fixed on the top on every page of this report.
+Based on the filter selection for zone, region, country, state,
+consultant, school name, grade, curriculum and date range, the KPI
+values will change. It contains the following information:</p>
+<ul>
+<li><p>Active Students</p></li>
+<li><p>Active Teachers</p></li>
+<li><p>Available Recalls</p></li>
+<li><p>Available Practices</p></li>
+<li><p>Available Assessments</p></li>
+<li><p>Available Reviews</p></li>
+</ul>
+<h1
+id="mathpro-usage-overall-and-unique">3 Mathpro
+usage – Overall and Unique</h1><img
+src="media/image3.png" style="width:6.27165in;height:3.12437in"/>
+<p>This page contains the following information:</p>
+<ul>
+<li><p>Overall Activities: Assigned vs Completed</p></li>
+</ul>
+<ul>
+<li><p>Unique Activities: Assigned vs Completed</p></li>
+</ul>
+<h2 id="export-and-explore-in-excel">3.1 Export and Explore in
+Excel</h2><p><img src="media/image4.png"
+  style="width:6.27165in;height:1.18123in"/></p>
+<p>Follow these steps to export the graph to Excel:</p>
+<ol type="1">
+<li><p>Click on the three-dot menu at the top of the graph, as shown in
+the red-highlighted box in the image above.</p></li>
+<li><p>From the dropdown menu, select <strong>"Export
+Data."</strong></p></li>
+</ol>
+<h2 id="section"></h2>
+<h2
+id="which-data-do-you-want-to-export">
+3.2 Which data do you want to export?</h2><img
+src="media/image5.png" style="width:6.26923in;height:3.54306in"/>
+<ol start="3" type="1">
+<li><p>In the <strong>"Which data do you want to export?"</strong>
+window, under <strong>File format</strong>, choose
+<strong>.xlsx</strong> or <strong>.csv</strong>.</p></li>
+<li><p>Click <strong>"Export"</strong> at the bottom right of the window
+to complete the process.</p></li>
+</ol>
+<h2
+id="overall-activities-assigned-vs-completed">3.3 Overall Activities: Assigned vs Completed</h2><img
+src="media/image6.png" style="width:6.27165in;height:1.94203in"/>
+<p>This graph provides information on total assigned activities (blue
+bar) and total completed activities (green bar) year on year across
+different activity types—Recall, Practice, Assessments, and Reviews.
+Additionally, the purple line indicates the completion rate, calculated
+as completed activities divided by assigned activities.</p>
+<h2
+id="unique-activities-assigned-vs-completed">
+3.4 Unique Activities: Assigned vs Completed</h2><img
+src="media/image7.png" style="width:6.27165in;height:1.82883in"/>
+<p>This graph provides information on unique activities assigned (blue
+bar) and unique activities completed (green bar) across different
+activity types—Recall, Practice, Assessments, and Reviews—within the
+selected date range. Additionally, the yellow dot represents the number
+of unique students who were assigned these activities at least once
+during the same period.</p>
+<h1
+id="activity-usage">4 Activity Usage</h1><img
+src="media/image8.png" style="width:6.27165in;height:3.22963in"/>
+<h1 id="this-page-contains-the-following-information">This page contains
+the following information:</h1>
+<ul>
+<li><p>Overall: Activity by Status</p></li>
+<li><p>Unique: Activity by Status</p></li>
+</ul>
+<p>Above the KPI Panel, there is an option to filter the graphs by
+activity.</p>
+<h2 id="overall-activity-by-status">4.1 Overall: Activity by
+Status</h2><img src="media/image9.png"
+style="width:6.27165in;height:1.70792in"/>
+<p>This graph presents an overview of activities categorized by their
+status within the selected date range. The blue bar represents assigned
+activities, indicating the total number of activities assigned by the
+teacher. The orange bar denotes activities that have not been started.
+The peach bar signifies activities in progress, referring to tasks that
+were assigned at any point and have been started but not yet finished.
+The green bar highlights completed activities. The grey bar represents
+re-assigned activities, which were previously completed by students but
+have been assigned again by the teacher within the chosen timeframe.
+Finally, purple line indicates the activities completion rate,
+calculated as the proportion of completed activities to assigned
+activities.</p>
+<h2
+id="unique-activity-by-status">4.2 Unique: Activity by Status</h2><img
+src="media/image9.png" style="width:6.27165in;height:1.70805in"/>
+<p>This graph provides information on unique activities by their status
+for the selected date range. Activities assigned, denoted by the blue
+bar, represent the distinct activities assigned by the teacher.
+Activities not started, indicated by the red bar, include assigned
+activities that remain untouched by students. Activities in progress,
+represented by the yellow bar, refer to activities that have been
+started but not yet completed. The green bar highlights completed
+activities. Activities re-assigned, depicted by the grey bar, represent
+activities that were previously completed but have been assigned again
+by the teacher. The purple line indicates the activities completion
+rate, calculated again in the same manner.</p>
+<h1
+id="average-usage">
+5 Average Usage</h1><img
+src="media/image10.png" style="width:6.27165in;height:3.14694in"/>
+<p>This page contains the following information:</p>
+<ul>
+<li><p>Average Activities Completed</p></li>
+</ul>
+<h2
+id="average-activities-completed">5.1
+Average Activities Completed</h2><img
+src="media/image11.png" style="width:6.27165in;height:2.46113in"
+alt="A graph of a bar chart AI-generated content may be incorrect." />
+<p>This graph displays the average number of activities for each
+category: Overall, Recall, Practice, Assessments, and Review. The
+colours represent each category as follows: Overall is denoted by
+purple, Recall by yellow, Practice by blue, Assessments by red, and
+Review by light blue.</p>
+</body>
+</html>
