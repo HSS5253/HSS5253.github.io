@@ -24,7 +24,7 @@
     border: 3px solid black;
     margin-bottom: 20px;
     display: block; /* Ensures the image is treated as a block element */
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: auto;
   }
 
