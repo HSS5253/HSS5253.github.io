@@ -12,7 +12,7 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 20px solid rgba(11, 111, 26, 0.651);  /* Arrow direction & size */
-    top: 70;        /* Center vertically */
+    top: 40;        /* Center vertically */
     left: 2%;      /* Position right next to the image */
     transform: translateY(-50%); /* Fine-tune vertical alignment */
   }
