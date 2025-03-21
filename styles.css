@@ -7,13 +7,13 @@
 
   .arrow {
     position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;  /* Adjust arrow width */
-    border-right: 10px solid transparent;
-    border-top: 20px solid black;         /* Arrow direction & size */
-    top: 50%;        /* Center vertically */
-    left: 105%;      /* Position right next to the image */
+    width: 20px;
+    height: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid greenyellow;  /* Arrow direction & size */
+    top: 74.5%;        /* Center vertically */
+    left: 0%;      /* Position right next to the image */
     transform: translateY(-50%); /* Fine-tune vertical alignment */
   }
   
