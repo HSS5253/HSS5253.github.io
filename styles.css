@@ -5,19 +5,6 @@
     padding-bottom: 20px;
   }
 
-  .arrow {
-    position: absolute;
-    width: 50px;
-    height: 10px;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 20px solid rgba(11, 111, 26, 0.651);  /* Arrow direction & size */
-    top: 40;        /* Center vertically */
-    left: 2%;      /* Position right next to the image */
-    transform: translateY(-50%); /* Fine-tune vertical alignment */
-  }
-  
-
   /* Custom Margin for images and responsive sizing */
   .content-image {
     max-width: 50%; /* Make the images smaller, adjust percentage as needed */
