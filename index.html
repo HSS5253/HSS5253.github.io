@@ -10,6 +10,18 @@
       padding-top: 20px;
       padding-bottom: 20px;
     }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     .content-image {
       max-width: 50%;
       height: auto;
@@ -32,20 +44,60 @@
   <div class="text-center mb-4">
     <h1 class="fw-bold">MathPro User Engagement Report</h1>
   </div>
-  <h2 id="table-of-contents">Table of Contents</h2>
-  <ul>
-    <li><a href="#accessing-the-report">1. Accessing the Report</a></li>
-    <li><a href="#user-engagement-per-activity">2. User Engagement Per Activity</a></li>
-    <li><a href="#export-and-explore-in-excel">2.1 Export and Explore in Excel</a></li>
-    <li><a href="#which-data-to-export">2.2 Which Data to Export?</a></li>
-    <li><a href="#total-recalls-assigned-vs-completed">2.3 Total Recalls Assigned vs Completed</a></li>
-    <li><a href="#total-practices-assigned-vs-completed">2.4 Total Practices Assigned vs Completed</a></li>
-    <li><a href="#total-assessments-assigned-vs-completed">2.5 Total Assessments Assigned vs Completed</a></li>
-    <li><a href="#total-reviews-assigned-vs-completed">2.6 Total Reviews Assigned vs Completed</a></li>
-  </ul>
+    <!-- Table of Contents -->
+  <nav class="mb-4" id="TOC">
+    <h2>Table of Contents</h2>
+    <ul>
+        <li>
+          <a href="#accessing-the-report">1. Accessing the MathPro User Engagement Report</a>
+        </li>
+        <li>
+          <a href="#user-engagement-per-activity">2. User Engagement Per Activity</a>
+        </li>
+        <ul>
+            <li><a href="#export-and-explore-in-excel">2.1 Export and Explore in Excel</a></li>
+            <li><a href="#which-data-to-export">2.2 Which Data to Export?</a></li>
+            <li><a href="#total-recalls-assigned-vs-completed">2.3 Total Recalls Assigned vs Completed</a></li>
+            <li><a href="#total-practices-assigned-vs-completed">2.4 Total Practices Assigned vs Completed</a></li>
+            <li><a href="#total-assessments-assigned-vs-completed">2.5 Total Assessments Assigned vs Completed</a></li>
+            <li><a href="#total-reviews-assigned-vs-completed">2.6 Total Reviews Assigned vs Completed</a></li>
+        </ul>
+        <li>
+          <a href="#recalls">3. Recalls</a>
+          <ul>
+              <li><a href="#percentage-of-unique-recall-takers-vs-active-students">3.1 Percentage of Unique Recall Takers</a></li>
+              <li><a href="#variation-in-recalls-completed-vs-active-students">3.2 Variation in % Recalls Completed</a></li>
+              <li><a href="#frequency-distribution-recalls-completed">3.3 Frequency Distribution Recalls</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#practices">4. Practices</a>
+          <ul>
+              <li><a href="#percentage-of-unique-practice-takers-vs-active-students">4.1 Percentage of Unique Practice Takers</a></li>
+              <li><a href="#variation-in-practices-completed-vs-active-students">4.2 Variation in % Practices Completed</a></li>
+              <li><a href="#frequency-distribution-practices-completed">4.3 Frequency Distribution Practices</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#assessments">5. Assessments</a>
+          <ul>
+              <li><a href="#percentage-of-unique-assessment-takers-vs-active-students">5.1 Percentage of Unique Assessment Takers</a></li>
+              <li><a href="#variation-in-assessment-completed-vs-active-students">5.2 Variation in % Assessments Completed</a></li>
+              <li><a href="#frequency-distribution-assessments-completed">5.3 Frequency Distribution Assessments</a></li>
+          </ul>
+        <li>
+          <a href="#reviews">6. Reviews</a>
+          <ul>
+              <li><a href="#percentage-of-unique-review-takers-vs-active-students">6.1 Percentage of Unique Review Takers</a></li>
+              <li><a href="#variation-in-review-completed-vs-active-students">6.2 Variation in % Reviews Completed</a></li>
+              <li><a href="#frequency-distribution-reviews-completed">6.3 Frequency Distribution Reviews</a></li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
   <section id="accessing-the-report">
     <h3>1. Accessing the MathPro User Engagement Report</h3>
-    <img src="media/image1.png" class="content-image"/>
+    <img src="media/image1-1.png" class="content-image"/>
     <p>Click on MathPro User Engagement Report to view the detailed insights.</p>
   </section>
   <section id="user-engagement-per-activity">
