@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>MathPro User Engagement Report</title>
+  <title>MathPro #mathpro-usage-overall-and-unique Report</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -34,221 +34,165 @@
         font-size: 0.9em;
       }
       h1 {
-        font-size: 1.8em;
+        font-size: 2em;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="text-center mb-4">
-    <h1 class="fw-bold">MathPro User Engagement Report</h1>
-  </div>
-    <!-- Table of Contents -->
-  <nav class="mb-4" id="TOC">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li>
-          <a href="#accessing-the-report">1. Accessing the MathPro User Engagement Report</a>
-        </li>
-        <li>
-          <a href="#user-engagement-per-activity">2. User Engagement Per Activity</a>
-        </li>
+  <div class="container">
+    <div class="text-center mb-4">
+      <h1 class="fw-bold">MathPro Usage Report - Release Notes</h1>
+    </div>
+      <!-- Table of Contents -->
+      <nav class="mb-4" id="TOC">
+        <h2>Table of Contents</h2>
         <ul>
-            <li><a href="#export-and-explore-in-excel">2.1 Export and Explore in Excel</a></li>
-            <li><a href="#which-data-to-export">2.2 Which Data to Export?</a></li>
-            <li><a href="#total-recalls-assigned-vs-completed">2.3 Total Recalls Assigned vs Completed</a></li>
-            <li><a href="#total-practices-assigned-vs-completed">2.4 Total Practices Assigned vs Completed</a></li>
-            <li><a href="#total-assessments-assigned-vs-completed">2.5 Total Assessments Assigned vs Completed</a></li>
-            <li><a href="#total-reviews-assigned-vs-completed">2.6 Total Reviews Assigned vs Completed</a></li>
+            <li>
+              <a href="#accessing-the-mathpro-usage-report">1. Accessing the MathPro Usage Report</a>
+            </li>
+            <li>
+              <a href="#the-kpi-panel">2. The KPI Panel</a>
+            </li>
+            <li>
+              <a href="#mathpro-usage-overall-and-unique">3. MathPro Usage – Overall and Unique</a>
+              <ul>
+                  <li><a href="#export-and-explore-in-excel">3.1 Export and Explore in Excel</a></li>
+                  <li><a href="#which-data-do-you-want-to-export">3.2 Which Data Do You Want to Export?</a></li>
+                  <li><a href="#overall-activities-assigned-vs-completed">3.3 Overall Activities: Assigned vs Completed</a></li>
+                  <li><a href="#unique-activities-assigned-vs-completed">3.4 Unique Activities: Assigned vs Completed</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#activity-usage">4. Activity Usage</a>
+              <ul>
+                  <li><a href="#overall-activity-by-status">4.1 Overall: Activity by Status</a></li>
+                  <li><a href="#unique-activity-by-status">4.2 Unique: Activity by Status</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#average-usage">5. Average Usage</a>
+              <ul>
+                  <li><a href="#average-activities-completed">5.1 Average Activities Completed</a></li>
+              </ul>
+            </li>
         </ul>
-        <li>
-          <a href="#recalls">3. Recalls</a>
-          <ul>
-              <li><a href="#percentage-of-unique-recall-takers-vs-active-students">3.1 Percentage of Unique Recall Takers</a></li>
-              <li><a href="#variation-in-recalls-completed-vs-active-students">3.2 Variation in % Recalls Completed</a></li>
-              <li><a href="#frequency-distribution-recalls-completed">3.3 Frequency Distribution Recalls</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#practices">4. Practices</a>
-          <ul>
-              <li><a href="#percentage-of-unique-practice-takers-vs-active-students">4.1 Percentage of Unique Practice Takers</a></li>
-              <li><a href="#variation-in-practices-completed-vs-active-students">4.2 Variation in % Practices Completed</a></li>
-              <li><a href="#frequency-distribution-practices-completed">4.3 Frequency Distribution Practices</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#assessments">5. Assessments</a>
-          <ul>
-              <li><a href="#percentage-of-unique-assessment-takers-vs-active-students">5.1 Percentage of Unique Assessment Takers</a></li>
-              <li><a href="#variation-in-assessment-completed-vs-active-students">5.2 Variation in % Assessments Completed</a></li>
-              <li><a href="#frequency-distribution-assessments-completed">5.3 Frequency Distribution Assessments</a></li>
-          </ul>
-        <li>
-          <a href="#reviews">6. Reviews</a>
-          <ul>
-              <li><a href="#percentage-of-unique-review-takers-vs-active-students">6.1 Percentage of Unique Review Takers</a></li>
-              <li><a href="#variation-in-review-completed-vs-active-students">6.2 Variation in % Reviews Completed</a></li>
-              <li><a href="#frequency-distribution-reviews-completed">6.3 Frequency Distribution Reviews</a></li>
-          </ul>
-        </li>
-    </ul>
-  </nav>
-  <section id="accessing-the-report">
-    <h3>1. Accessing the MathPro User Engagement Report</h3>
-    <img src="media/image1.png" class="content-image"/>
-    <p>Click on MathPro User Engagement Report to view the detailed insights.</p>
-  </section>
-  <section id="user-engagement-per-activity">
-    <h3>2. User Engagement Per Activity</h3>
-    <img src="media/image2.png" class="content-image"/>
-    <p>This section provides data on different types of assigned and completed activities:</p>
-    <ul>
-      <li>Total Recalls Assigned vs Completed</li>
-      <li>Total Practices Assigned vs Completed</li>
-      <li>Total Assessments Assigned vs Completed</li>
-      <li>Total Reviews Assigned vs Completed</li>
-    </ul>
-  </section>
-  <section id="export-and-explore-in-excel">
-    <h4>2.1 Export and Explore in Excel</h4>
-    <img src="media/image3.png" class="content-image" alt="Export to Excel" />
-    <p>Steps to export data:</p>
-    <ol>
-      <li>Click on the three-dot menu at the top of the graph.</li>
-      <li>Select <strong>"Export Data"</strong> from the dropdown menu.</li>
-    </ol>
-  </section>
-  <section id="which-data-to-export">
-    <h4>2.2 Which Data to Export?</h4>
-    <img src="media/image4.png" class="content-image" alt="Select Data to Export" />
-    <ol>
-      <li>Select the file format (either .xlsx or .csv).</li>
-      <li>Click <strong>"Export"</strong> to download the file.</li>
-    </ol>
-  </section>
-  <section id="total-recalls-assigned-vs-completed">
-    <h4>2.3 Total Recalls Assigned vs Completed</h4>
-    <img src="media/image5.png" class="content-image"/>
-    <p>This graph displays data on assigned recalls versus completed recalls within the selected period.</p>
-  </section>
-  <section id="total-practices-assigned-vs-completed">
-    <h4>2.4 Total Practices Assigned vs Completed</h4>
-    <img src="media/image6.png" class="content-image"/>
-    <p>This graph provides information on the number of practices assigned and completed year on year within the selected date range.</p>
-  </section>
-  <section id="total-assessments-assigned-vs-completed">
-    <h4>2.5 Total Assessments Assigned vs Completed</h4>
-    <img src="media/image7.png" class="content-image"/>
-    <p>This graph provides information on the number of assessments assigned and completed year on year within the selected date range.</p>
-  </section>
-  <section id="total-reviews-assigned-vs-completed">
-    <h4>2.6 Total Reviews Assigned vs Completed</h4>
-    <img src="media/image8.png" class="content-image"/>
-    <p>This graph provides information on the number of reviews assigned and completed year on year within the selected date range.</p>
-  </section>
-  <section id="recalls">
-    <h4>3 Recalls</h4>
-    <img src="media/image9.png" class="content-image"/>
-    <p>This page contains the following information</p>
-    <ol>
-      <li>Percentage of Unique Recall Takers Vs Active Students</li>
-      <li>Variation in % Recalls Completed vs Active Students (compared to previous year)</li>
-      <li>Frequency Distribution Recalls Completed</li>
-    </ol>
-  </section>
-  <section id="percentage-of-unique-recall-takers-vs-active-students">
-    <h4>3.1 Percentage of Unique Recall Takers Vs Active Students</h4>
-    <img src="media/image10.png" class="content-image"/>
-    <p>This graph provides information on the percentage of unique recall takers compared to active students for the selected year, the previous year, and the year before that.</p>
-  </section>
-  <section id="variation-in-recalls-completed-vs-active-students">
-    <h4>3.2 Variation in % Recalls Completed vs Active Students</h4>
-    <img src="media/image11.png" class="content-image"/>
-    <p>This graph shows the percentage growth or decline in active students (blue line) and recalls completed (purple line) in a specific month compared to the same month in the previous year.</p>
-  </section>
-  <section id="frequency-distribution-recalls-completed">
-    <h4>3.3 Frequency Distribution Recalls Completed</h4>
-    <img src="media/image12.png" class="content-image"/>
-    <p>This graph shows the total count of students who have completed 0, 1-5, 6-10, 11-15, and 15+ recalls within the selected date range. It also compares this data with the previous two years for the same period, with an option to toggle for percentage.</p>
-  </section>
-  <section id="practices">
-    <h4>4 Practices</h4>
-    <img src="media/image13.png" class="content-image"/>
-    <p>This page contains the following information</p>
-    <ol>
-      <li>Percentage of Unique Practice Takers Vs Active Students</li>
-      <li>Variation in % Practice Completed vs Active Students (compared to previous year)</li>
-      <li>Frequency Distribution Practice Completed</li>
-    </ol>
-  </section>
-  <section id="percentage-of-unique-practice-takers-vs-active-students">
-    <h4>4.1 Percentage of Unique Practice Takers Vs Active Students</h4>
-    <img src="media/image14.png" class="content-image"/>
-    <p>This graph provides information on the percentage of unique practice takers compared to active students for the selected year, the previous year, and the year before that.</p>
-  </section>
-  <section id="variation-in-practices-completed-vs-active-students">
-    <h4>4.2 Variation in % Recalls Completed vs Active Students</h4>
-    <img src="media/image15.png" class="content-image"/>
-    <p>This graph shows the percentage growth or decline in active students (blue line) and practices completed (purple line) in a specific month compared to the same month in the previous year.</p>
-  </section>
-  <section id="frequency-distribution-practices-completed">
-    <h4>4.3 Frequency Distribution Practices Completed</h4>
-    <img src="media/image16.png" class="content-image"/>
-    <p>This graph shows the total count of students who have completed 0, 1-5, 6-10, 11-15, and 15+ practices within the selected date range. It also compares this data with the previous two years for the same period, with an option to toggle for percentage.</p>
-  </section>
-  <section id="assessments">
-    <h4>5 Assessments</h4>
-    <img src="media/image17.png" class="content-image"/>
-    <p>This page contains the following information</p>
-    <ol>
-      <li>Percentage of Unique Assessment Takers Vs Active Students</li>
-      <li>Variation in % Assessment Completed vs Active Students (compared to previous year)</li>
-      <li>Frequency Distribution Assessment Completed</li>
-    </ol>
-  </section>
-  <section id="percentage-of-unique-assessment-takers-vs-active-students">
-    <h4>5.1 Percentage of Unique Assessment Takers Vs Active Students</h4>
-    <img src="media/image18.png" class="content-image"/>
-    <p>This graph provides information on the percentage of unique assessment takers compared to active students for the selected year, the previous year, and the year before that.</p>
-  </section>
-  <section id="variation-in-assessment-completed-vs-active-students">
-    <h4>5.2 Variation in % Assessment Completed vs Active Students</h4>
-    <img src="media/image19.png" class="content-image"/>
-    <p>This graph shows the percentage growth or decline in active students (blue line) and practices completed (purple line) in a specific month compared to the same month in the previous year.</p>
-  </section>
-  <section id="frequency-distribution-practices-completed">
-    <h4>5.3 Frequency Distribution Practices Completed</h4>
-    <img src="media/image20.png" class="content-image"/>
-    <p>This graph shows the total count of students who have completed 0, 1-5, 6-10, 11-15, and 15+ practices within the selected date range. It also compares this data with the previous two years for the same period, with an option to toggle for percentage.</p>
-  </section>
-  <section id="reviews">
-    <h4>6 Reviews</h4>
-    <img src="media/image21.png" class="content-image"/>
-    <p>This page contains the following information</p>
-    <ol>
-      <li>Percentage of Unique Review Takers Vs Active Students</li>
-      <li>Variation in % Review Completed vs Active Students (compared to previous year)</li>
-      <li>Frequency Distribution Review Completed</li>
-    </ol>
-  </section>
-  <section id="percentage-of-unique-review-takers-vs-active-students">
-    <h4>6.1 Percentage of Unique Review Takers Vs Active Students</h4>
-    <img src="media/image22.png" class="content-image"/>
-    <p>This graph provides information on the percentage of unique review takers compared to active students for the selected year, the previous year, and the year before that.</p>
-  </section>
-  <section id="variation-in-review-completed-vs-active-students">
-    <h4>6.2 Variation in % Review Completed vs Active Students</h4>
-    <img src="media/image23.png" class="content-image"/>
-    <p>This graph shows the percentage growth or decline in active students (blue line) and reviews completed (purple line) in a specific month compared to the same month in the previous year.</p>
-  </section>
-  <section id="frequency-distribution-reviews-completed">
-    <h4>6.3 Frequency Distribution Reviews Completed</h4>
-    <img src="media/image24.png" class="content-image"/>
-    <p>This graph shows the total count of students who have completed 0, 1-2, 3-4, 5+ reviews within the selected date range. It also compares this data with the previous two years for the same period, with an option to toggle for percentage.</p>
-  </section>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      </nav>
+  
+      <section id="accessing-the-mathpro-usage-report">
+        <h4>1. Accessing the MathPro Usage Report</h4>
+        <img src="media/image1.png" class="content-image" alt="MathPro Usage Report Screenshot" />
+        <p>Click on MathPro Usage Report. By default, the MathPro Usage – Overall and Unique report will be opened.</p>
+      </section>
+      <section id="the-kpi-panel">
+        <h4>2. The KPI Panel</h4>
+        <img src="media/image2.png" class="content-image" alt="KPI Panel Screenshot" />
+        <p>The KPI Panel will be fixed on the top of every page of this report. Based on the filter selection for zone, region, country, state, consultant, school name, grade, curriculum, and date range, the KPI values will change. It contains the following information:</p>
+        <ul>
+          <li>Active Students</li>
+          <li>Active Teachers</li>
+          <li>Available Recalls</li>
+          <li>Available Practices</li>
+          <li>Available Assessments</li>
+          <li>Available Reviews</li>
+        </ul>
+      </section>
+      <section id="mathpro-usage-overall-and-unique">
+        <h4>3. MathPro Usage - Overall and Unique</h4>
+        <img src="media/image3.png" class="content-image" alt="MathPro Usage - Overall and Unique Screenshot" />
+        <p>This page contains the following information:</p>
+        <ul>
+          <li>Overall Activities: Assigned vs Completed</li>
+          <li>Unique Activities: Assigned vs Completed</li>
+        </ul>
+      </section>
+      <section id="export-and-explore-in-excel">
+        <h4>3.1 Export and Explore in Excel</h4>
+        <img src="media/image4.png" class="content-image" alt="Export and Explore in Excel Screenshot" />
+        <p>Follow these steps to export the graph to Excel:</p>
+        <ol>
+          <li>Click on the three-dot menu at the top of the graph, as shown in the red-highlighted box in the image above.</li>
+          <li>From the dropdown menu, select <strong>"Export Data."</strong></li>
+        </ol>
+      </section>
+      <section>
+        <h4>3.2 Which data do you want to export?</h4>
+        <img src="media/image5.png" class="content-image" alt="Which data do you want to export? Screenshot" />
+        <ol start="3">
+          <li>In the <strong>"Which data do you want to export?"</strong> window, under <strong>File format</strong>, choose <strong>.xlsx</strong> or <strong>.csv</strong>.</li>
+          <li>Click <strong>"Export"</strong> at the bottom right of the window to complete the process.</li>
+        </ol>
+      </section>
+      <section id="overall-activities-assigned-vs-completed">
+        <h4>3.3 Overall Activities: Assigned vs Completed</h4>
+        <img src="media/image6.png" class="content-image" alt="Overall Activities: Assigned vs Completed Screenshot" />
+        <p>This graph provides information on total assigned activities (blue bar) and total completed activities (green bar) year on year across different activity types—Recall, Practice, Assessments, and Reviews. Additionally, the purple line indicates the completion rate, calculated as completed activities divided by assigned activities.</p>
+      </section>  
+      <section id="unique-activities-assigned-vs-completed">
+        <h4>3.4 Unique Activities: Assigned vs Completed</h4>
+        <img src="media/image7.png" class="content-image" alt="Unique Activities: Assigned vs Completed Screenshot" />
+        <p>This graph provides information on unique activities assigned (blue bar) and unique activities completed (green bar) across different activity types—Recall, Practice, Assessments, and Reviews—within the selected date range. Additionally, the yellow dot represents the number of unique students who were assigned these activities at least once during the same period.</p>
+      </section>
+      <section id="activity-usage">
+        <h4>4. Activity Usage</h4>
+        <img src="media/image8.png" class="content-image" alt="Activity Usage Screenshot" />
+        <p>This page contains the following information:</p>
+        <ul>
+          <li>Overall: Activity by Status</li>
+          <li>Unique: Activity by Status</li>
+        </ul>
+        <p>Above the KPI Panel, there is an option to filter the graphs by activity.</p>
+      </section>
+      <section id="#overall-activity-by-status">
+      <h4>4.1 Overall: Activity by Status</h4>
+      <img src="media/image9.png" class="content-image" alt="Overall: Activity by Status Screenshot" />
+      <p>This graph presents an overview of activities categorized by their
+        status within the selected date range. The blue bar represents assigned
+        activities, indicating the total number of activities assigned by the
+        teacher. The orange bar denotes activities that have not been started.
+        The peach bar signifies activities in progress, referring to tasks that
+        were assigned at any point and have been started but not yet finished.
+        The green bar highlights completed activities. The grey bar represents
+        re-assigned activities, which were previously completed by students but
+        have been assigned again by the teacher within the chosen timeframe.
+        Finally, purple line indicates the activities completion rate,
+        calculated as the proportion of completed activities to assigned
+        activities.</p>
+      </section>
+      <section id="unique-activity-by-status">
+        <h4>4.2 Unique: Activity by Status</h4>
+        <img src="media/image9.png" class="content-image" alt="Unique: Activity by Status Screenshot" />
+        <p>This graph provides information on unique activities by their status
+          for the selected date range. Activities assigned, denoted by the blue
+          bar, represent the distinct activities assigned by the teacher.
+          Activities not started, indicated by the red bar, include assigned
+          activities that remain untouched by students. Activities in progress,
+          represented by the yellow bar, refer to activities that have been
+          started but not yet completed. The green bar highlights completed
+          activities. Activities re-assigned, depicted by the grey bar, represent
+          activities that were previously completed but have been assigned again
+          by the teacher. The purple line indicates the activities completion
+          rate, calculated again in the same manner.</p>
+      </section>
+      <section id="average-usage">
+        <h4>5. Average Usage</h4>
+        <img src="media/image10.png" class="content-image" alt="Average Usage Screenshot" />
+        <p>This page contains the following information:</p>
+        <ul>
+          <li>Average Activities Completed</li>
+        </ul>
+      </section>
+      <section id="average-activities-completed">
+        <h4>5.1 Average Activities Completed</h4>
+        <img src="media/image11.png" class="content-image" alt="Average Activities Completed Screenshot" />
+        <p>This graph displays the average number of activities for each
+          category: Overall, Recall, Practice, Assessments, and Review. The
+          colours represent each category as follows: Overall is denoted by
+          purple, Recall by yellow, Practice by blue, Assessments by red, and
+          Review by light blue.</p>
+      </section>
+    </div>
 </body>
 </html>
+
