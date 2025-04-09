@@ -11,6 +11,9 @@ body {
     border-radius: 10px;
     
 }
+select{
+  white-space:  nowrap;
+}
 
 .navbar {
   background-color: #004080 !important;
@@ -41,6 +44,7 @@ padding-right: 10px;
 
 .table thead th {
   vertical-align: middle;
+
 }
 
 .table td, .table th {
