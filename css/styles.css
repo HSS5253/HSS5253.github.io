@@ -28,8 +28,10 @@ body {
   }
 
 .logo {
-  height: 50px;
+  height: 60px;
   width: auto;
+  padding-left: 10px;
+padding-right: 10px;
 }
 
 .dashboard-content {
