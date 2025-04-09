@@ -1,198 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>MathPro #mathpro-usage-overall-and-unique Report</title>
+  <meta charset="UTF-8" />
+  <title>Scholastic | School Term Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    .content-image {
-      max-width: 50%;
-      height: auto;
-      border-radius: 10px;
-      border: 3px solid black;
-      margin-bottom: 20px;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-      }
-      h1 {
-        font-size: 2em;
-        text-align: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="text-center mb-4">
-      <h1 class="fw-bold">MathPro Usage Report - Release Notes</h1>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/sei_logo.png" alt="Scholastic Logo" class="logo me-2" />
+        <span class="fw-bold">School Term Dashboard</span>
+      </a>
     </div>
-      <!-- Table of Contents -->
-      <nav class="mb-4" id="TOC">
-        <h2>Table of Contents</h2>
-        <ul>
-            <li>
-              <a href="#accessing-the-mathpro-usage-report">1. Accessing the MathPro Usage Report</a>
-            </li>
-            <li>
-              <a href="#the-kpi-panel">2. The KPI Panel</a>
-            </li>
-            <li>
-              <a href="#mathpro-usage-overall-and-unique">3. MathPro Usage – Overall and Unique</a>
-              <ul>
-                  <li><a href="#export-and-explore-in-excel">3.1 Export and Explore in Excel</a></li>
-                  <li><a href="#which-data-do-you-want-to-export">3.2 Which Data Do You Want to Export?</a></li>
-                  <li><a href="#overall-activities-assigned-vs-completed">3.3 Overall Activities: Assigned vs Completed</a></li>
-                  <li><a href="#unique-activities-assigned-vs-completed">3.4 Unique Activities: Assigned vs Completed</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#activity-usage">4. Activity Usage</a>
-              <ul>
-                  <li><a href="#overall-activity-by-status">4.1 Overall: Activity by Status</a></li>
-                  <li><a href="#unique-activity-by-status">4.2 Unique: Activity by Status</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#average-usage">5. Average Usage</a>
-              <ul>
-                  <li><a href="#average-activities-completed">5.1 Average Activities Completed</a></li>
-              </ul>
-            </li>
-        </ul>
-      </nav>
-  
-      <section id="accessing-the-mathpro-usage-report">
-        <h4>1. Accessing the MathPro Usage Report</h4>
-        <img src="media/image1.png" class="content-image" alt="MathPro Usage Report Screenshot" />
-        <p>Click on MathPro Usage Report. By default, the MathPro Usage – Overall and Unique report will be opened.</p>
-      </section>
-      <section id="the-kpi-panel">
-        <h4>2. The KPI Panel</h4>
-        <img src="media/image2.png" class="content-image" alt="KPI Panel Screenshot" />
-        <p>The KPI Panel will be fixed on the top of every page of this report. Based on the filter selection for zone, region, country, state, consultant, school name, grade, curriculum, and date range, the KPI values will change. It contains the following information:</p>
-        <ul>
-          <li>Active Students</li>
-          <li>Active Teachers</li>
-          <li>Available Recalls</li>
-          <li>Available Practices</li>
-          <li>Available Assessments</li>
-          <li>Available Reviews</li>
-        </ul>
-      </section>
-      <section id="mathpro-usage-overall-and-unique">
-        <h4>3. MathPro Usage - Overall and Unique</h4>
-        <img src="media/image3.png" class="content-image" alt="MathPro Usage - Overall and Unique Screenshot" />
-        <p>This page contains the following information:</p>
-        <ul>
-          <li>Overall Activities: Assigned vs Completed</li>
-          <li>Unique Activities: Assigned vs Completed</li>
-        </ul>
-      </section>
-      <section id="export-and-explore-in-excel">
-        <h4>3.1 Export and Explore in Excel</h4>
-        <img src="media/image4.png" class="content-image" alt="Export and Explore in Excel Screenshot" />
-        <p>Follow these steps to export the graph to Excel:</p>
-        <ol>
-          <li>Click on the three-dot menu at the top of the graph, as shown in the red-highlighted box in the image above.</li>
-          <li>From the dropdown menu, select <strong>"Export Data."</strong></li>
-        </ol>
-      </section>
-      <section>
-        <h4>3.2 Which data do you want to export?</h4>
-        <img src="media/image5.png" class="content-image" alt="Which data do you want to export? Screenshot" />
-        <ol start="3">
-          <li>In the <strong>"Which data do you want to export?"</strong> window, under <strong>File format</strong>, choose <strong>.xlsx</strong> or <strong>.csv</strong>.</li>
-          <li>Click <strong>"Export"</strong> at the bottom right of the window to complete the process.</li>
-        </ol>
-      </section>
-      <section id="overall-activities-assigned-vs-completed">
-        <h4>3.3 Overall Activities: Assigned vs Completed</h4>
-        <img src="media/image6.png" class="content-image" alt="Overall Activities: Assigned vs Completed Screenshot" />
-        <p>This graph provides information on total assigned activities (blue bar) and total completed activities (green bar) year on year across different activity types—Recall, Practice, Assessments, and Reviews. Additionally, the purple line indicates the completion rate, calculated as completed activities divided by assigned activities.</p>
-      </section>  
-      <section id="unique-activities-assigned-vs-completed">
-        <h4>3.4 Unique Activities: Assigned vs Completed</h4>
-        <img src="media/image7.png" class="content-image" alt="Unique Activities: Assigned vs Completed Screenshot" />
-        <p>This graph provides information on unique activities assigned (blue bar) and unique activities completed (green bar) across different activity types—Recall, Practice, Assessments, and Reviews—within the selected date range. Additionally, the yellow dot represents the number of unique students who were assigned these activities at least once during the same period.</p>
-      </section>
-      <section id="activity-usage">
-        <h4>4. Activity Usage</h4>
-        <img src="media/image8.png" class="content-image" alt="Activity Usage Screenshot" />
-        <p>This page contains the following information:</p>
-        <ul>
-          <li>Overall: Activity by Status</li>
-          <li>Unique: Activity by Status</li>
-        </ul>
-        <p>Above the KPI Panel, there is an option to filter the graphs by activity.</p>
-      </section>
-      <section id="#overall-activity-by-status">
-      <h4>4.1 Overall: Activity by Status</h4>
-      <img src="media/image9.png" class="content-image" alt="Overall: Activity by Status Screenshot" />
-      <p>This graph presents an overview of activities categorized by their
-        status within the selected date range. The blue bar represents assigned
-        activities, indicating the total number of activities assigned by the
-        teacher. The orange bar denotes activities that have not been started.
-        The peach bar signifies activities in progress, referring to tasks that
-        were assigned at any point and have been started but not yet finished.
-        The green bar highlights completed activities. The grey bar represents
-        re-assigned activities, which were previously completed by students but
-        have been assigned again by the teacher within the chosen timeframe.
-        Finally, purple line indicates the activities completion rate,
-        calculated as the proportion of completed activities to assigned
-        activities.</p>
-      </section>
-      <section id="unique-activity-by-status">
-        <h4>4.2 Unique: Activity by Status</h4>
-        <img src="media/image9.png" class="content-image" alt="Unique: Activity by Status Screenshot" />
-        <p>This graph provides information on unique activities by their status
-          for the selected date range. Activities assigned, denoted by the blue
-          bar, represent the distinct activities assigned by the teacher.
-          Activities not started, indicated by the red bar, include assigned
-          activities that remain untouched by students. Activities in progress,
-          represented by the yellow bar, refer to activities that have been
-          started but not yet completed. The green bar highlights completed
-          activities. Activities re-assigned, depicted by the grey bar, represent
-          activities that were previously completed but have been assigned again
-          by the teacher. The purple line indicates the activities completion
-          rate, calculated again in the same manner.</p>
-      </section>
-      <section id="average-usage">
-        <h4>5. Average Usage</h4>
-        <img src="media/image10.png" class="content-image" alt="Average Usage Screenshot" />
-        <p>This page contains the following information:</p>
-        <ul>
-          <li>Average Activities Completed</li>
-        </ul>
-      </section>
-      <section id="average-activities-completed">
-        <h4>5.1 Average Activities Completed</h4>
-        <img src="media/image11.png" class="content-image" alt="Average Activities Completed Screenshot" />
-        <p>This graph displays the average number of activities for each
-          category: Overall, Recall, Practice, Assessments, and Review. The
-          colours represent each category as follows: Overall is denoted by
-          purple, Recall by yellow, Practice by blue, Assessments by red, and
-          Review by light blue.</p>
-      </section>
+  </nav>
+
+  <main class="container dashboard-content">
+    <div class="filters row mb-4">
+      <div class="col-md-4">
+        <label for="zoneFilter" class="form-label">Zone</label>
+        <select id="zoneFilter" class="form-select">
+          <option value="">All Zones</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="termFilter" class="form-label">Term</label>
+        <select id="termFilter" class="form-select">
+          <option value="">All Terms</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="countryFilter" class="form-label">Country</label>
+        <select id="countryFilter" class="form-select">
+          <option value="">All Countries</option>
+        </select>
+      </div>
     </div>
+
+    <div class="table-responsive">
+      <table class="table table-hover table-bordered text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Zone</th>
+            <th>Country</th>
+            <th>State/Territory</th>
+            <th>Term</th>
+            <th>Term Date</th>
+            <th>Number of Weeks</th>
+            <th>School Holidays Date</th>
+            <th>Number of School Holidays (Days)</th>
+          </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

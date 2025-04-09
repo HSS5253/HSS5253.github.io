@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa;
+    padding-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #004080 !important;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .dashboard-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .table thead th {
+    vertical-align: middle;
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  
+  .filters select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .filters .form-label {
+    font-weight: 600;
+  }
+  
