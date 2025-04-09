@@ -31,7 +31,7 @@ function populateFilters() {
 
 function populateSelect(id, items) {
     const select = document.getElementById(id);
-    select.innerHTML = '<option value="">Select</option>';  // Clear existing options
+    select.innerHTML = '<option value="">Select All</option>';  // Clear existing options
     items.sort().forEach(item => {
         const opt = document.createElement('option');
         opt.value = item;
