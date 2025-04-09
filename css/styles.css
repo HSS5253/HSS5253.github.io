@@ -11,10 +11,6 @@ body {
     border-radius: 10px;
     
 }
-select{
-  white-space:  nowrap;
-}
-
 .navbar {
   background-color: #004080 !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -44,7 +40,13 @@ padding-right: 10px;
 
 .table thead th {
   vertical-align: middle;
-
+  
+}
+td.Zone{
+  white-space: nowrap;
+}
+td.Term{
+  white-space: nowrap;
 }
 
 .table td, .table th {
@@ -58,4 +60,11 @@ padding-right: 10px;
 
 .filters .form-label {
   font-weight: 600;
+}
+td {
+  word-wrap: normal !important;  /* Prevent word wrapping in all cells */
+}
+/* Ensure "Zone" and "Term" Columns Do Not Wrap */
+td.zone, td.term {
+  white-space: nowrap !important; /* Prevent text wrapping */
 }
