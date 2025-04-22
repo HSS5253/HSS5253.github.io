@@ -28,7 +28,6 @@ function populateFilters() {
     populateSelect('countryFilter', [...countries]);
 }
 
-
 function populateSelect(id, items) {
     const select = document.getElementById(id);
     select.innerHTML = '<option value="">Select All</option>';  // Clear existing options
@@ -62,13 +61,15 @@ function renderTable(data) {
     const tbody = document.getElementById('dataTable');
     tbody.innerHTML = "";  // Clear existing rows
 
-    // Populate the table with filtered data
     data.forEach(row => {
+        const state = row['State/Territory'];
+        const displayState = (state === null || state === undefined || state.trim() === "") ? 'NA' : state;
+
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${row['Zone']}</td>
             <td>${row['Country']}</td>
-            <td>${row['State/Territory']}</td>
+            <td>${displayState}</td>
             <td>${row['Term']}</td>
             <td>${row['Term Date']}</td>
             <td>${row['Number of Weeks']}</td>

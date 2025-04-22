@@ -3,61 +3,65 @@ body {
   padding-top: 80px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container {
-    max-width: 1200px;
-    margin-top: 40px; /* added margin to create space from navbar */
-    padding: 24px 24px 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    
-}
-.navbar {
-  background-color: #004080 !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.navbar .nav-link,
-.navbar .navbar-brand {
-    color: #fff !important;
-    font-weight: 500;
-  }
-  
-.navbar .nav-link:hover,
-.navbar .navbar-brand:hover {
-    color: #ffdd57 !important;
-  }
 
-.logo {
-  height: 60px;
-  width: auto;
-  padding-left: 10px;
-padding-right: 10px;
+/* Navbar styling */
+.navbar {
+background-color: #004080 !important;  /* Dark blue background */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+padding: 10px 20px;  /* Padding for a spacious look */
 }
+
+.navbar .container-fluid {
+display: flex;
+justify-content: space-between;  /* Space between elements */
+align-items: center;  /* Center content vertically */
+}
+
+.navbar .fw-bold {
+color: #ffffff;  /* White color for the title */
+font-size: 24px;  /* Larger font size for better visibility */
+}
+
+.navbar .navbar-toggler {
+border-color: #ffffff;  /* White border for the toggle button */
+}
+
+.navbar .navbar-toggler-icon {
+background-color: #ffffff;  /* White color for the hamburger icon */
+}
+
+.navbar-nav .nav-link {
+color: #ffffff !important;  /* White links */
+font-weight: 500;  /* Slightly lighter font weight */
+margin-left: 15px;  /* Space between links */
+}
+
+.navbar-nav .nav-link:hover {
+color: #cce5ff !important;  /* Light blue hover effect */
+transition: color 0.3s;
+}
+
+
+
 
 .dashboard-content {
-  max-width: 1200px;
-  margin: auto;
+max-width: 1200px;
+margin: auto;
 }
 
 .table thead th {
-  vertical-align: middle;
-  
-}
-td.Zone{
-  white-space: nowrap;
-}
-td.Term{
-  white-space: nowrap;
+vertical-align: middle;
 }
 
 .table td, .table th {
-  vertical-align: middle;
+vertical-align: middle;
 }
 
 .filters select {
-  background-color: #fff;
-  border: 1px solid #ccc;
+background-color: #fff;
+border: 1px solid #ccc;
 }
 
 .filters .form-label {
-  font-weight: 600;
+font-weight: 600;
 }
