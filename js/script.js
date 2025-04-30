@@ -16,7 +16,7 @@ async function fetchData() {
 
 function populateFixedFilters() {
     const fixedZones = ['Zone 1', 'Zone 2', 'Zone 3', 'Zone 4'];
-    const fixedTerms = ['Term 1', 'Term 2', 'Term 3', 'Term 4','Academic Year'];
+    const fixedTerms = ['Term 1', 'Term 2', 'Term 3', 'Term 4'];
 
     populateSelect('zoneFilter', fixedZones);
     populateSelect('termFilter', fixedTerms);
