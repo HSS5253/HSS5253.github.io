@@ -41,9 +41,6 @@ color: #cce5ff !important;  /* Light blue hover effect */
 transition: color 0.3s;
 }
 
-
-
-
 .dashboard-content {
 max-width: 1200px;
 margin: auto;
@@ -64,4 +61,18 @@ border: 1px solid #ccc;
 
 .filters .form-label {
 font-weight: 600;
+}
+
+.filters {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+margin-bottom: 30px;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.filters > div {
+flex: 1;
+min-width: 220px;
 }
