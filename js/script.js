@@ -2,12 +2,13 @@ let rawData = [];
 
 async function fetchData() {
     try {
-        const res = await fetch('data.json');  // Make sure this path is correct
+        const res = await fetch('data.json');
         if (!res.ok) throw new Error('Network response was not ok');
         rawData = await res.json();
         populateFixedFilters();
-        updateCountryFilter();  // Populate countries initially (All zones)
-        renderTable(rawData);  // Initially render the full table
+        updateCountryFilter();
+        populateCalendarFilter();  // Add Calendar A/B filter options
+        renderTable(rawData);
     } catch (error) {
         console.error("Failed to load data.json", error);
     }
@@ -20,20 +21,19 @@ function populateFixedFilters() {
     populateSelect('zoneFilter', fixedZones);
     populateSelect('termFilter', fixedTerms);
 
-    // Add event listeners
     document.getElementById('zoneFilter').addEventListener('change', () => {
-        updateCountryFilter();  // Update countries based on Zone selection
-        applyFilters();         // Also apply filters to table
+        updateCountryFilter();
+        applyFilters();
     });
     document.getElementById('termFilter').addEventListener('change', applyFilters);
     document.getElementById('countryFilter').addEventListener('change', applyFilters);
+    document.getElementById('calendarFilter').addEventListener('change', applyFilters);  // NEW
 }
 
 function updateCountryFilter() {
     const zoneVal = document.getElementById('zoneFilter').value;
-
-    // Find countries belonging to the selected zone
     const countries = new Set();
+
     rawData.forEach(row => {
         if (zoneVal === "" || row['Zone'] === zoneVal) {
             countries.add(row['Country']);
@@ -43,9 +43,19 @@ function updateCountryFilter() {
     populateSelect('countryFilter', [...countries]);
 }
 
+function populateCalendarFilter() {
+    const calendarTypes = new Set();
+    rawData.forEach(row => {
+        if (row['Calendar A/B']) {
+            calendarTypes.add(row['Calendar A/B']);
+        }
+    });
+    populateSelect('calendarFilter', [...calendarTypes]);
+}
+
 function populateSelect(id, items) {
     const select = document.getElementById(id);
-    select.innerHTML = '<option value="">Select All</option>';  // Reset options
+    select.innerHTML = '<option value="">Select All</option>';
     items.sort().forEach(item => {
         const opt = document.createElement('option');
         opt.value = item;
@@ -58,11 +68,13 @@ function applyFilters() {
     const zoneVal = document.getElementById('zoneFilter').value;
     const termVal = document.getElementById('termFilter').value;
     const countryVal = document.getElementById('countryFilter').value;
+    const calendarVal = document.getElementById('calendarFilter').value; // NEW
 
     const filtered = rawData.filter(row =>
         (zoneVal === "" || row['Zone'] === zoneVal) &&
         (termVal === "" || row['Term'] === termVal) &&
-        (countryVal === "" || row['Country'] === countryVal)
+        (countryVal === "" || row['Country'] === countryVal) &&
+        (calendarVal === "" || row['Calendar A/B'] === calendarVal) // NEW
     );
 
     renderTable(filtered);
@@ -70,11 +82,11 @@ function applyFilters() {
 
 function renderTable(data) {
     const tbody = document.getElementById('dataTable');
-    tbody.innerHTML = "";  // Clear old table data
+    tbody.innerHTML = "";
 
     data.forEach(row => {
         const state = row['State/Territory'];
-        const displayState = (state === null || state === undefined || state.trim() === "") ? 'NA' : state;
+        const displayState = (!state || state.trim() === "") ? 'NA' : state;
 
         const tr = document.createElement('tr');
         tr.innerHTML = `
