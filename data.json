@@ -380,7 +380,7 @@
     "Term": "Term 2",
     "Term Date": "16 July 2025 to 30 November 2025",
     "Number of Weeks": "~20",
-    "School Holidays Date": "1 December 2025 to Late January 2026",
+    "School Holidays Date": "1 December 2025 to last week of January 2026",
     "Number of School Holidays (Days)": "~55",
     "Calendar A/B": "Calendar A"
   },
@@ -512,7 +512,7 @@
     "Term": "Term 2",
     "Term Date": "21 July 2025 to 30 November 2025",
     "Number of Weeks": "~19",
-    "School Holidays Date": "1 December 2025 to Late February 2026",
+    "School Holidays Date": "1 December 2025 to last week of February 2026",
     "Number of School Holidays (Days)": "~90",
     "Calendar A/B": "Calendar A"
   },
@@ -1073,7 +1073,7 @@
     "Term": "Term 3",
     "Term Date": "April 2026 to June 2026",
     "Number of Weeks": 12,
-    "School Holidays Date": "22 June to mid August 2026",
+    "School Holidays Date": "22 June to second week of August 2026",
     "Number of School Holidays (Days)": "~45",
     "Calendar A/B": "Calendar B"
   },
@@ -1150,7 +1150,7 @@
     "Term": "Term 2",
     "Term Date": "February 2026 to June 2026",
     "Number of Weeks": 16,
-    "School Holidays Date": "July 2026 to Mid September 2026",
+    "School Holidays Date": "July 2026 to second week of September 2026",
     "Number of School Holidays (Days)": "~70",
     "Calendar A/B": "Calendar B"
   },
