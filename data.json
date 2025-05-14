@@ -2371,7 +2371,7 @@
     "Term": "Term 2",
     "Term Date": "Tuesday 22 April 2025 to Friday 4 July 2025",
     "Number of Weeks": 11,
-    "School Holidays Date": "Saturday 5 July 2025 to Sunday 20 Sunday 2025",
+    "School Holidays Date": "Saturday 5 July 2025 to Sunday 20 July 2025",
     "Number of School Holidays (Days)": 16,
     "Calendar A/B": "Calendar A"
   },
@@ -2404,7 +2404,7 @@
     "Term": "Term 2",
     "Term Date": "Monday 28 April 2025 to Friday 4 July 2025",
     "Number of Weeks": 9,
-    "School Holidays Date": "Saturday 5 July 2025 to Sunday 20 July",
+    "School Holidays Date": "Saturday 5 July 2025 to Sunday 20 July 2025",
     "Number of School Holidays (Days)": 16,
     "Calendar A/B": "Calendar A"
   },
@@ -2426,7 +2426,7 @@
     "Term": "Term 2",
     "Term Date": "Monday 28 April 2025 to Friday 4 July 2025",
     "Number of Weeks": 10,
-    "School Holidays Date": "Saturday 5 July 2025 to Sunday 20 July",
+    "School Holidays Date": "Saturday 5 July 2025 to Sunday 20 July 2025",
     "Number of School Holidays (Days)": 16,
     "Calendar A/B": "Calendar A"
   },
@@ -2448,7 +2448,7 @@
     "Term": "Term 3",
     "Term Date": "Monday 14 July 2025 to Friday 19 September 2025",
     "Number of Weeks": 10,
-    "School Holidays Date": "Saturday 20 September 2025 to Monday 6 October",
+    "School Holidays Date": "Saturday 20 September 2025 to Monday 6 October 2025",
     "Number of School Holidays (Days)": 17,
     "Calendar A/B": "Calendar A"
   },
@@ -2492,7 +2492,7 @@
     "Term": "Term 3",
     "Term Date": "Monday 21 July 2025 to Friday 26 September 2025",
     "Number of Weeks": 10,
-    "School Holidays Date": "Saturday 27 September 2025 to Sunday 12 October",
+    "School Holidays Date": "Saturday 27 September 2025 to Sunday 12 October 2025",
     "Number of School Holidays (Days)": 16,
     "Calendar A/B": "Calendar A"
   },
@@ -2514,7 +2514,7 @@
     "Term": "Term 3",
     "Term Date": "Monday 21 July 2025 to Friday 26 September 2025",
     "Number of Weeks": 10,
-    "School Holidays Date": "Saturday 27 September 2025 to Sunday 12 October",
+    "School Holidays Date": "Saturday 27 September 2025 to Sunday 12 October 2025",
     "Number of School Holidays (Days)": 16,
     "Calendar A/B": "Calendar A"
   },
@@ -2591,7 +2591,7 @@
     "Term": "Term 4",
     "Term Date": "Tuesday 7 October 2025 to Thursday 11 December 2025",
     "Number of Weeks": 10,
-    "School Holidays Date": "Friday 12 December 2025 to Tuesday 27 Jan 2026",
+    "School Holidays Date": "Friday 12 December 2025 to Tuesday 27 January 2026",
     "Number of School Holidays (Days)": 47,
     "Calendar A/B": "Calendar A"
   },
@@ -2602,7 +2602,7 @@
     "Term": "Term 4",
     "Term Date": "Monday 13 October 2025 to Friday 12 December 2025",
     "Number of Weeks": 9,
-    "School Holidays Date": "Saturday 13 December 2025 to Monday 26 January",
+    "School Holidays Date": "Saturday 13 December 2025 to Monday 26 January 2026",
     "Number of School Holidays (Days)": 45,
     "Calendar A/B": "Calendar A"
   },
@@ -2613,7 +2613,7 @@
     "Term": "Term 4",
     "Term Date": "Tuesday 14 October 2025 to Thursday 18 December 2025",
     "Number of Weeks": 10,
-    "School Holidays Date": "Friday 19 December 2025 to 29 January 2025",
+    "School Holidays Date": "Friday 19 December 2025 to 29 January 2026",
     "Number of School Holidays (Days)": 43,
     "Calendar A/B": "Calendar A"
   },
